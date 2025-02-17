@@ -1,0 +1,100 @@
+
+
+{% load static %}
+
+{% block content %}
+
+<section id="testimonials" class="testimonials section white-background">    
+<!-- End Section Title -->
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+     <!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Blogs</h2>
+  <div><span>Check Our</span> <span class="description-title"><font color="#f13a09">News & Events </font></span></div>
+</div><!-- End Section Title -->
+  <div class="swiper init-swiper">
+    <script type="application/json" class="swiper-config">
+      {
+        "loop": true,
+        "speed": 600,
+        "autoplay": {
+          "delay": 4000
+        },
+        "slidesPerView": "auto",
+        "pagination": {
+          "el": ".swiper-pagination",
+          "type": "bullets",
+          "clickable": true
+        },
+        "breakpoints": {
+          "320": {
+            "slidesPerView": 1,
+            "spaceBetween": 40
+          },
+          "1200": {
+            "slidesPerView": 2,
+            "spaceBetween": 20
+          }
+        }
+      }
+    </script> 
+
+    {% comment %} <div class="row">
+      {% for bl in blog_details %}
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+            <img src="{{bl.blog_event_image.url}}" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{bl.blog_event_name}}</h5>
+            
+            <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Read</a>
+          </div>
+        </div>
+      </div>{% endfor %} 
+    </div> {% endcomment %}
+
+
+    <div class="swiper-wrapper"  >
+      {% for bl in blog_details %}
+      <div class="swiper-slide " >
+     
+      <div class=" card">         
+      
+          <div class=" mx-auto  d-block" style="height: 500px; ">
+              <img src="{{bl.blog_event_image.url}}" class="img-fluid  w-100 h-75"   alt="" style="display: fit"></h4>           
+              <div class="card-body">
+                <h5 class="card-title">{{bl.blog_event_name}}</h5>
+                <center> <a href="{% url 'blog' %}" class="btn btn-secondary" data-mdb-ripple-init>Read more</a></center>
+                
+                
+              </div>
+           
+          </div>
+          
+              
+      </div><!-- End testimonial item -->
+  
+  </div> 
+    {% endfor %} 
+  </div> 
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+</section><!-- /Testimonials Section -->
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

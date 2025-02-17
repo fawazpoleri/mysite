@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% block tittle %}
+Mango Hyper-Contact
+{% endblock %}
+
+{% block content %}
+{% include 'pageheader.html' %}    
+
+      <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      
+
+        <div class="row justify-content-center" data-aos="zoom-in" >
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Get in Touch</h3>
+              <p>Have a question, suggestion, or just want to say hello? We're here for you! Feel free to reach out through any of the options below, and we'll get back to you as soon as we can. Your thoughts matter, and we're excited to connect.</p>
+              
+            </div>
+          </div>
+  
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d731.2559745677562!2d47.92901428594074!3d29.32753437158156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9bf38648f9e1%3A0x65209aca58745da3!2sMANGO%20HYPER%20SHUWAIKH!5e0!3m2!1sen!2skw!4v1679555237837!5m2!1sen!2skw" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+             <a href="https://g.co/kgs/5A2A1dc" target="_blank"> <i class="bi bi-geo-alt flex-shrink-0"></i></a>
+              <div>
+                <h3>Address</h3>
+                
+                <p>Shuwaikh Industrial, Area (3)</p>
+                <p>Block 1,Street 86,Plot 49</p>
+                <p>First Floor , Corporate Office </p>
+                
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="250">
+              <a class="link-secondary text-decoration-none" href="tel:+15057922430"> <i class="bi bi-telephone flex-shrink-0"></i></a>
+              <div>
+                <h3>Call Us</h3>
+                (+965 ) 51521589
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <a class="link-secondary text-decoration-none" href="mailto:demo@yourdomain.com"> <i class="bi bi-envelope flex-shrink-0"></i></a>
+              <div>
+                <h3>Email Us</h3>
+                hr@mangohyper.com
+              </div>
+            </div><!-- End Info Item -->
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="350">
+              <i class="bi bi-clock flex-shrink-0"></i>
+              <div>
+                <h3>Working Time</h3>
+               <div class="d-flex mb-3">
+                  <p class="text-secondary fw-bold mb-0 me-5">Sat - Thu</p>
+                  <p class="text-secondary mb-0">9am - 6pm</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" >
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+
+
+
+      
+{% endblock %}

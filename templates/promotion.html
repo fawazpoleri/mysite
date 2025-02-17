@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tittle %}
+
+Mango Hyper-Promotions
+{% endblock %}
+
+{% block content%}
+
+{% include 'pageheader.html' %}  
+
+    <!-- promo Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row gy-4">
+            
+            <div class="col-lg-6">
+              
+                <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                  <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                    
+                      <h2><font color="">WEEKLY OFFERS & DAILY IN-HOUSE PROMOTIONS  </font></h2><h3> - Great Savings Every Day! </h2>
+         
+
+                      <p>
+                        Get ready for amazing discounts on your favorite products! Every week, we bring you exclusive offers across a wide range of categories—from fresh produce and pantry staples to home essentials and more. Our Weekly Offers are designed to help you save on what you need while discovering great new deals.
+                      </p>
+                      <p>Plus, don’t forget to check out our Daily In-House Promotions! Enjoy exclusive, limited-time deals available only in-store, ensuring you get great bargains every day. New offers pop up daily, so you can always find something new to save on.
+                      </p>
+                      <p>
+                        Don’t miss out—check in often for the latest offers and promotions!
+                      </p>
+                    </div>
+                  
+                </div>
+         
+                        
+            </div>
+     
+            <div class="col-lg-5 mx-auto">
+                <div class="portfolio-details-slider swiper init-swiper">
+    
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 10000
+                      },
+                      "slidesPerView": "auto",
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                  </script>
+              
+                  <div class="swiper-wrapper align-items-center">
+                    {% for p in Promo_details  %} 
+                    
+                    <div class="swiper-slide">                                          
+                      <img class="rounded"  src="{{ p.promo_image.url }}" >                
+                    </div>
+                    {% endfor %}  
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  
+                </div>
+              </div>
+           
+          </div>
+          
+  
+        </div>
+      </div>
+  
+      </section><!-- /promo Details Section -->
+
+
+      
+
+
+      
+
+
+
+{% endblock %}

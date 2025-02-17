@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tittle %}
+Mango Hyper-News/updates
+{% endblock %}
+
+{% block content %}
+{% include 'pageheader.html' %} 
+  
+              <div class="container">
+                <div class="row">
+          
+                  <div class="col-lg-8">
+          
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                      <div class="container">
+                        {% for bl in blog_details %} 
+                        <article class="article">    
+                          <div class="post-img">
+                            <img src="{{bl.blog_event_image.url}}" alt="" class="img-fluid rounded  w-30 " style="object-fit: cover;width: 25rem;">
+                          </div>
+                          <time datetime="2020-01-01">{{bl.posted_date}}</time>
+                          <h2 class="title">{{bl.blog_event_name}}</h2>
+                          
+                      <!-- End meta top -->         
+                          <div class="content">
+                            <p>
+                                {{bl.blog_description}}
+                            </p>                        
+                          </div><!-- End post content -->         
+                            
+                        </article>
+                        
+                        {% endfor %}            
+                     </div>
+                    </section><!-- /Blog Details Section -->         
+                  </div>         
+                  <div class="col-lg-4 sidebar">          
+                    <div class="widgets-container"> 
+                      <!-- Recent Posts Widget -->
+                      <div class="recent-posts-widget widget-item">
+          
+                        <h3 class="widget-title"><font color="#f13a09">Recent Posts</font></h3>
+                        {% for bl in blog_details %} 
+                        <div class="post-item">
+                          <!-- <img src="{{bl.blog_event_image.url}}" alt="" class="img-fluid" style="width: 200px; height: 20px"> -->
+                          <div>
+                            <h4>{{bl.blog_event_name}}</h4> <!--a tag -->
+                            <time datetime="2020-01-01">{{bl.posted_date}}</time>
+                          </div>
+                        </div><!-- End recent post item-->  
+                        {% endfor %}                        
+                      </div><!--/Recent Posts Widget -->
+               </div>          
+              </div>
+           </div>
+        </div>
+          
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+          
+            
+
+          {% endblock %}

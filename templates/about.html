@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tittle %}
+Mango Hyper-About
+{% endblock %}
+{% block content %}
+{% include 'pageheader.html' %}    
+ 
+  
+    <!-- About Start -->
+
+ <section id="service-details" class="service-details section">
+
+    <div class="container">
+
+      <div class="row ">
+
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">         
+          <div class="position-relative h-100">
+            <img class="img-fluid  w-100 h-100 " src="{% static 'img/ABOUT US.jpg' %}" alt="" style="object-fit: cover;">       
+          </div>
+        </div>
+
+        <div class="col-lg-7 " data-aos="fade-up" data-aos-delay="200">
+         
+          <h3>Welcome to Mango Hyper</h3>
+          <p class="text-muted text-justify">
+            Mango Hyper Central Market, established in 2003, is a leading multinational retail and wholesale entity based in Kuwait, with its corporate office situated in Shuwaikh. The organization has expanded rapidly, operating nine branches throughout Kuwait and employing over 400 individuals from diverse backgrounds, serving more than 1,000 customers daily.  </p>
+          <p class="text-muted text-justify">
+            Under the visionary leadership of Mr. Rafeeq Ahmad, Chairman and Managing Director, the group has successfully transitioned from traditional supermarket models to a high-profile retail and wholesale business. The hypermarkets are designed to provide a modern shopping experience, featuring spacious layouts, extensive product counters, ample parking, food courts, and fashion stores, all aimed at meeting the diverse needs of consumers under one roof.
+          </p>
+          <p class="text-muted text-justify">
+            Mango Hyper Central Market emphasizes quality in its products and services while actively pursuing new market opportunities to enhance value for its business partners. The company's operations are guided by core values of Integrity, Teamwork, Accountability, Innovation, and Commitment, which underpin its mission to improve the overall shopping experience for customers.
+          </p>
+
+
+          
+          
+        </div>
+
+      </div>
+  
+
+   {% comment %} CORE VALES SECTION {% endcomment %}
+
+  <section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="400">
+
+    <div class="row gy-4 ">
+
+     
+
+      <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+        <i ><img src="{% static 'img/mission.png' %}" alt="Bootstrap" width="32" height="32"></i> 
+        <div class="stats-item rounded">
+          <h2 >Our Mission</h>
+          
+          <p class="mb-0 text-muted"> "To provide a modern shopping experience, meet all consumer needs, and expand in retail and wholesale sectors."</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+        <i ><img src="{% static 'img/vision.png' %}" alt="Bootstrap" width="32" height="32"></i> 
+        <div class="stats-item rounded">
+          <h2>Our Vission</h>
+           
+          <p class="mb-0 text-muted">To be Kuwait's No.1 retail brand by offering a unique shopping experience, top-quality products, and expanding into new markets.</p>
+        </div>
+      </div><!-- End Stats Item -->
+      <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+        <i ><img src="{% static 'img/values.png' %}" alt="Bootstrap" width="32" height="32"></i> 
+       
+
+        <div class="stats-item rounded">
+            
+             <h2>Our Values</h>
+          
+        <p class="mb-0 text-muted">Integrity</p>
+            <p class="mb-0 text-muted">Teamwork</p>
+          <p class="mb-0 text-muted">Innovation</p>
+
+          <p class="mb-0 text-muted">Accountability</p>
+          {% comment %} <p>Continuous Improvement</p> {% endcomment %}
+       
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="d-flex align-items-center justify-content-center" style="height: 400px;">
+<section id="testimonials" class="testimonials section white-background">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">     
+            <div class="testimonial-item"> 
+            
+              <center>  <h3>CMD's Message</h3></center>
+              <img src="{% static 'img/cmd.jpg' %}" class="img-fluid rounded" style="object-fit: cover;width: 100px; height: 150px" alt="">         
+              
+<h3>RAFEEQ AHMED</h3>
+<h4>CMD &amp; Founder</h4>
+<p>
+  
+  <i class="bi bi-quote quote-icon-left"></i>
+  <span>FOCUS ON SOMETHING THE CUSTOMER WANTS,
+    AND SERVE WITH SMILE ...</span>
+  <i class="bi bi-quote quote-icon-right"></i>
+</p>  
+</div>               
+  </section>
+    
+</div>
+
+
+  
+  
+  
+
+{% endblock %}

@@ -1,0 +1,105 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block tittle %}
+branches
+{% endblock %}
+
+{% block content %}
+{% include 'pageheader.html' %}    
+<div class="container">
+<div class="row justify-content-center" data-aos="zoom-in" >
+    <div class="col-xl-10">
+      <div class="text-center">
+        <h3>Great reasons to work at <font color="#f13a09">Mango Hyper </font></h3>
+       
+        <p>At Mango Hyper, we're also about creating a thriving, dynamic workplace where everyone has the opportunity to grow and succeed. We are always looking for motivated, passionate individuals who are ready to contribute to our vision of delivering exceptional service and value to our customers.</p>
+       
+      </div>
+    </div>
+
+</div>
+
+
+
+<section id="career" class="stats section">
+  
+
+   
+    <div class="container-fluid " data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 ">
+        <div class="col-lg-3  col-md-6 d-flex flex-column align-items-center">
+          <i ><img src="{% static 'img/growth.png' %}" alt="Bootstrap" width="32" height="32"></i> 
+          <div class="stats-item rounded">
+            <h4 >Growth</h4>
+            
+            <p class="mb-0 text-muted"> We encourage you to expand your boundaries and learn from everyone around you.</p>
+          </div>
+        </div><!-- End Stats Item -->
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i ><img src="{% static 'img/knowledge.png' %}" alt="Bootstrap" width="32" height="32"></i> 
+          <div class="stats-item rounded">
+            <h4 >Learning</h4>          
+            <p class="mb-0 text-muted"> We’re constantly refining our skillsets and aim to innovate daily.</p>
+          <br>
+          </div>
+        </div><!-- End Stats Item -->
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i ><img src="{% static 'img/work-life-balance.png' %}" alt="Bootstrap" width="32" height="32"></i> 
+          <div class="stats-item rounded">
+            <h4 >Work-life Balance</h4>          
+            <p class="mb-0 text-muted"> We make sure that you have a healthy balance between work and play.</p>
+          </div>
+          
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center ">
+          <i ><img src="{% static 'img/handshake.png' %}" alt="Bootstrap" width="32" height="32"></i> 
+          <div class="stats-item rounded">
+            <h4 >Equality</h4>          
+            <p class="mb-0 text-muted"> Everybody is welcome on our team and gets an equal opportunity to succeed.</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+         
+      </div>
+    </div>
+
+    {% comment %} <section id="testimonials" class="testimonials section white-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">                      
+          <div class="testimonial-item">            
+                 
+            <div>
+              <h1>Django Mail App</h1>
+      
+              <form method="post">
+                  {% csrf_token %}
+                  <label for="address">To:</label>
+                  <input id="address" type="email" name="address"/>
+              
+                  <label for="subject">Subject:</label>
+                  <input id="subject" name="subject"/>
+              
+                  <label for="message">Message:</label><br>
+                  <textarea id="message" name="message"></textarea>
+      
+                  <input type="submit">
+              </form>
+              <p>{{ result }}</p>
+          </div>             
+                         
+          </div>
+      </section> {% endcomment %}
+
+
+    </div>
+  </div>
+  
+
+</section>
+
+
+  
+  <!-- End Contact Form -->
+  
+{% endblock %}
+
